@@ -167,11 +167,6 @@ main {
   bottom: 100px;
   left:-100px;
 
-
-
-  /* position: absolute; */
-  /* left: -100px;
-  bottom: 40px; */
 }
 
 .ten {
@@ -307,12 +302,37 @@ main {
    
   }
 
-  .ten_years_badge {
+  /* .ten_years_badge {
     position: static;
     max-width: 300px;
 
+  } */
 
-  }
+  .ten_years_badge {
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 20px;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  position: static;
+
+
+  .ten {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.Experience {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+  
+}
 
   
 
