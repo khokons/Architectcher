@@ -21,6 +21,20 @@ body {
   background: #ff900e;
 }
 
+.text_light_gray {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .nav_title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  
+
 /* Common_css_End================ */
 
 /* Header_section_start-------------- */
@@ -37,11 +51,6 @@ nav {
   align-items: center;
 }
 
-.nav_title {
-  color: #131313;
-  font-size: 2.8rem;
-  font-weight: 700;
-}
 
 nav > ul {
   display: flex;
@@ -75,12 +84,7 @@ li a {
   font-weight: 700;
 }
 
-.banner_description {
-  color: #727272;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 26px;
-}
+
 
 .Banner img{
     width: 100%;
@@ -90,6 +94,119 @@ li a {
 /* Banner_Section_End============== */
 /* Header_section_End================ */
 
+
+main{
+    max-width: 1250px;
+    margin: 70px auto;
+}
+
+/* Our_Team_section_start---------- */
+ #Team_container{
+    display: flex;
+    align-items: center;
+}
+
+.team_img_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+   
+}
+
+.team_title{
+    color:#727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+    
+}
+
+
+.team_content{
+    padding-left: 70px;
+    padding-right: 70px;
+} 
+
+.team_description{
+    color:#727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+   
+}
+.of_our{
+    color:#131313;
+    font-weight: 700;
+
+}
+
+.future{
+    color: #FF900E;
+    font-weight: 700;
+  
+}
+/* Our_Team_section_end============ */
+
+
+/* Some_Facts_start---------- */
+#Some_Facts{
+    margin-top: 100px;
+}
+
+.facts_card_container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.facts_card_container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 35px;
+}
+
+.card_stats{
+    color:#424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card_title {
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -30px;
+}
+
+/* Some_Facts_End================ */
+
+/* Sponsors_Section_Start_-------- */
+.Our_Sponsor{
+ text-align: center;
+ margin-top: 100px;
+}
+
+.sponsor_img_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+}
+.sponsor_img_container img{
+    width: 165px;
+}
+
+/* Sponsors_Section_End============ */
+
+#footer{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#footer span{
+    color: orangered;
+}
 
 
 /* Mobile_device_Start------------------- */
@@ -105,18 +222,46 @@ li a {
      
       }
 
-      nav {
+    nav{
      flex-direction: column;
       }
 
       nav > ul {
         margin-right: 25%;
     }
+
+    #Team_container{
+      flex-direction: column;
     
+    }
+
+    .team_img_container{
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+
+   .some_info{
+    padding-left: 70px;
+    padding-right: 70px;
+    
+   }
+
+    .facts_card_container{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .sponsor_img_container{
+        flex-direction: column;
+        row-gap: 2rem;
+        
+    }
+
+    .sponsor_title{
+        padding: 0px 10px;
+    }
       
-
 }
-
 /* Mobile_device_End===================== */
 /* Medium_device_start--------------- */
 
@@ -129,9 +274,40 @@ li a {
     
             padding: 50px;
           }
-     
-    
-}
 
+          #Team_container{
+            flex-direction: column;
+          
+          }
+      
+          .team_img_container{
+              grid-template-columns: repeat(1, 1fr);
+             
+          }
+
+          .some_info{
+            padding-left: 70px;
+            padding-right: 70px;
+            
+           }
+
+          .facts_card_container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .sponsor_img_container{
+            flex-direction: column;
+            gap: 2rem;
+           
+        }
+    
+  
+
+      
+    }
+        
+     
 
 /* Medium_device_End============= */
